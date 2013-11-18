@@ -23,7 +23,7 @@
             Select card template: 
             <select id="gen-select-template" class="">
                 <?php
-                    $dir = '/home/dev/card-generator/templates';
+                    $dir = __DIR__.'/templates';
 
                     if (is_dir($dir)) {
                         if ($dh = opendir($dir)) {
@@ -40,7 +40,9 @@
             </select>
         </div>
         
+        <!-- TODO: Need to change this to support choosing other card templates. -->
         <iframe id="gen-template-frame" src="templates/reps-card.html"></iframe>
+        
         <form id="gen-create-form" action="generate.php" method="post">
             <input name="paper" type="hidden" value="card"/>
             <input name="orientation" type="hidden" value="portrait"/>
