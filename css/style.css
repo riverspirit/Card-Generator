@@ -1,0 +1,104 @@
+* {
+    color: #000000;
+}
+
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Ubuntu,OpenSansLight,Arial,Tahoma,Ubuntu,"Sans serif";
+}
+
+#gen-html-textarea {
+    display: none;
+}
+
+#gen-card-layout {
+    position: relative;
+}
+
+#gen-template-frame {
+    height: 227px;
+    width: 388px;
+}
+
+#header {
+    background-color: #2C2C2C;
+    background-image: -moz-linear-gradient(center top , #333333, #222222);
+    background-repeat: repeat-x;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    color: #CCCCCC;
+    font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 6px 20px;
+    text-align: right;
+}
+
+
+.button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FAFAFA;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+    background-repeat: no-repeat;
+    border-color: #CCCCCC #CCCCCC #BBBBBB;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Ubuntu, OpenSansLight, Arial, Tahoma, Ubuntu, "Sans serif";
+    font-size: 13px;
+    line-height: 18px;
+    padding: 4px 10px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+.button:hover {
+    -moz-transition: background-position 0.1s linear 0s;
+    background-color: #E6E6E6;
+    background-position: 0 -15px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.button:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+.button.active, .button:active {
+    background-color: #E6E6E6;
+    background-image: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.5);
+    outline: 0 none;
+}
+
+.button.disabled, .button[disabled] {
+    background-color: #E6E6E6;
+    background-image: none;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.65;
+}
+
+#header span {
+    color: silver;
+}
+
+.gen-select-template-container {
+    margin-bottom: 20px;
+}
+
+#footer {
+    color: #999999;
+    font: 100 0.8em/1.5em "Open Sans","Helvetica Neue",Arial,sans-serif;
+    text-align: center;
+}
