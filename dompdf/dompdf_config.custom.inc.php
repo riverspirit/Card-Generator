@@ -1,5 +1,5 @@
 <?php 
-//define("DOMPDF_TEMP_DIR", "/tmp");
+define("DOMPDF_TEMP_DIR", __DIR__."/tmp");
 //define("DOMPDF_CHROOT", DOMPDF_DIR);
 //define("DOMPDF_UNICODE_ENABLED", false);
 //define("DOMPDF_PDF_BACKEND", "PDFLib");
