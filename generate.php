@@ -13,7 +13,7 @@ if ( isset( $_POST["html"] )) {
   $dompdf->set_paper($_POST["paper"], $_POST["orientation"]);
   $dompdf->render();
 
-  $dompdf->stream("dompdf_out.pdf", array("Attachment" => false));
+  $dompdf->stream("card.pdf", array("Attachment" => false));
 
   exit(0);
 }
