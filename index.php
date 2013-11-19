@@ -57,6 +57,6 @@
         <br/>
         <br/>
         
-        <div id="footer">Made by fox lovers in Kerala | <a href="#">Grab the code</a> and improve this.</div>
+        <div id="footer">Made by fox lovers in Kerala | <a href="https://github.com/MozillaKerala/Card-Generator/">Grab the code</a> and improve this. | <a href="https://github.com/MozillaKerala/Card-Generator/tree/master#how-to-add-new-card-template">Add</a> new card template.</div>
     </body>
 </html>
