@@ -1,7 +1,7 @@
 Card Generator
 ==============
 
-Visiting card generator for the Moz community
+Business card generator for the Mozilla community
 
 
 ## How to add new card template ##
