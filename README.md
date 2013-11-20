@@ -16,6 +16,7 @@ _(If that's too much for you, you can just send the template design to hello@moz
 
 ## Contributors ##
 * [jsx](https://github.com/riverspirit)
+* [shine](https://github.com/shinescodes)
 
 ## License ##
 

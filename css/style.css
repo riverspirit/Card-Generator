@@ -1,12 +1,39 @@
+/* @Reset defaults *********/
+header, hgroup, nav, section, article, aside, footer, main { display: block; }
+html, body, form, fieldset, legend, h1, h2, h3, h4, h5, h6, dd { margin: 0; padding: 0; }
+p, pre, blockquote, ul, ol, dl, table, figure { margin: 0 0 1.5em; padding: 0; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset { border: 0; }
+legend { color: inherit; } /* For IE */
+form ul, form ol { list-style: none; }
+a img { border: 0; }
+input, select, textarea { font-family: inherit; font-size: 100%; }
+.dtstart, .dtend, .published, .updated { border: 0; }
+img, video, object, embed { max-width: 100%; height: auto; }
+
+/* @General styles ***/
+html {
+    border-top: 2px solid #fff;
+    background:url("../img/bg.png") repeat-x #fff;
+}
+body {
+    font-family: Ubuntu,OpenSansLight,Arial,Tahoma,Ubuntu,"Sans serif";
+    color: #333;
+    word-wrap: break-word;
+    margin: 0;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+    -webkit-tap-highlight-color: #6bd7f3;
+    -moz-tap-highlight-color: #6bd7f3;
+}
+
 * {
     color: #000000;
 }
 
-
-body {
-    margin: 0;
+#page{
     text-align: center;
-    font-family: Ubuntu,OpenSansLight,Arial,Tahoma,Ubuntu,"Sans serif";
 }
 
 #gen-html-textarea {
@@ -94,11 +121,17 @@ body {
 }
 
 .gen-select-template-container {
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 
 #footer {
-    color: #999999;
+    background: #fff;
+    margin-top: 100px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    color: #999999 !important;
     font: 100 0.8em/1.5em "Open Sans","Helvetica Neue",Arial,sans-serif;
     text-align: center;
+    color: #bbb;
+    overflow: hidden;
 }
