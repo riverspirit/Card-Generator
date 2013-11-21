@@ -16,7 +16,7 @@
         <meta property="og:title" content="Card Generator | Mozilla Kerala">
         <meta property="og:url" content="http://cards.mozillakerala.org">
         <meta property="og:description" content="Card Generator for Mozillians">
-        <meta property="og:image" content="img/mozilla_og.png">
+        <meta property="og:image" content="images/mozilla_og.png">
         <meta property="fb:page_id" content="290667851051610">
 
         <!--    Cascade Style Sheets Includes       -->
