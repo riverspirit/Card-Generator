@@ -80,7 +80,7 @@
 
                 <textarea name="html" id="gen-html-textarea"></textarea>
 
-                <div style="text-align: center; margin-top: 1em;">
+                <div>
                     <input type="button" value="Generate Card" id="gen-card-button" class="button" />
                 </div>
             </form>
