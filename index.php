@@ -25,6 +25,9 @@
         <!--    Tabzilla stylesheet     -->
         <link rel="stylesheet" type="text/css" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" />
 
+        <!--    Tabzilla Script     -->
+        <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+
         <!--    Javascript Includes     -->
         <script src="js/jquery-2.0.3.min.js"></script>
         <script>
