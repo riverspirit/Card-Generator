@@ -16,7 +16,7 @@ img, video, object, embed { max-width: 100%; height: auto; }
 /* @General styles ***/
 html {
     border-top: 2px solid #fff;
-    background:url("../img/bg.png") repeat-x #fff;
+    background:url("../images/bg.png") repeat-x #fff;
 }
 body {
     font-family: Ubuntu,OpenSansLight,Arial,Tahoma,Ubuntu,"Sans serif";
@@ -86,7 +86,8 @@ body {
     padding: 4px 10px;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-}
+    margin-top: 1.25em;
+ }
 
 .button:hover {
     -moz-transition: background-position 0.1s linear 0s;

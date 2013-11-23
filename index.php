@@ -10,20 +10,23 @@
         <!--    favicon     -->
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
 
-        <!-- For Facebook -->
+        <!--    Facebook META Tags
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Card Generator | Mozilla Kerala">
         <meta property="og:title" content="Card Generator | Mozilla Kerala">
         <meta property="og:url" content="http://cards.mozillakerala.org">
         <meta property="og:description" content="Card Generator for Mozillians">
-        <meta property="og:image" content="img/mozilla_og.png">
-        <meta property="fb:page_id" content="290667851051610">
+        <meta property="og:image" content="images/mozilla_og.png">
+        <meta property="fb:page_id" content="290667851051610">  -->
 
         <!--    Cascade Style Sheets Includes       -->
         <link rel="stylesheet" href="css/style.css" />
 
         <!--    Tabzilla stylesheet     -->
         <link rel="stylesheet" type="text/css" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" />
+
+        <!--    Tabzilla Script     -->
+        <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 
         <!--    Javascript Includes     -->
         <script src="js/jquery-2.0.3.min.js"></script>
@@ -77,7 +80,7 @@
 
                 <textarea name="html" id="gen-html-textarea"></textarea>
 
-                <div style="text-align: center; margin-top: 1em;">
+                <div>
                     <input type="button" value="Generate Card" id="gen-card-button" class="button" />
                 </div>
             </form>
