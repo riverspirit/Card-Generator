@@ -10,14 +10,14 @@
         <!--    favicon     -->
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
 
-        <!-- For Facebook -->
+        <!--    Facebook META Tags
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Card Generator | Mozilla Kerala">
         <meta property="og:title" content="Card Generator | Mozilla Kerala">
         <meta property="og:url" content="http://cards.mozillakerala.org">
         <meta property="og:description" content="Card Generator for Mozillians">
         <meta property="og:image" content="images/mozilla_og.png">
-        <meta property="fb:page_id" content="290667851051610">
+        <meta property="fb:page_id" content="290667851051610">  -->
 
         <!--    Cascade Style Sheets Includes       -->
         <link rel="stylesheet" href="css/style.css" />
