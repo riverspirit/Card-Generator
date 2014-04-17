@@ -128,7 +128,7 @@ body {
 
 #footer {
     background: #fff;
-    margin-top: 45px;
+    margin-top: 10px;
     border-top: 1px solid rgba(0,0,0,.1);
     color: #999999 !important;
     font: 100 0.8em/1.5em "Open Sans","Helvetica Neue",Arial,sans-serif;
@@ -144,7 +144,6 @@ body {
 .heart {
     color: #D40000;
 }
-
 
 .shortcut-key {
     border: 1px solid #CCCCCC;
