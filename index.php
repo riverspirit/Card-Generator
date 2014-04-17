@@ -49,7 +49,7 @@
             <div id="header">
                 <span>Card Generator</span>
             </div>
-            
+
             <div class="gen-select-template-container">
                 Select card template: 
                 <select id="gen-select-template" class="">
@@ -70,6 +70,8 @@
                     ?>
                 </select>
             </div>
+
+            <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text.</p>
             
             <!-- TODO: Need to change this to support choosing other card templates. -->
             <iframe id="gen-template-frame" src="templates/reps-card.html"></iframe>
@@ -88,6 +90,18 @@
             <div id="footer"><br/>Created by fox lovers in Kerala | <a href="https://github.com/MozillaKerala/Card-Generator/">Grab the code</a> and improve it. | <a href="https://github.com/MozillaKerala/Card-Generator/tree/master#how-to-add-new-card-template">Add</a> a new card template.<br/><br/></div>
 
         </div>
+
+        <script>
+            $(document).on('keydown', function (e) {
+                if (e.keyCode == 16) {
+                	$('#gen-template-frame').contents().find('div[contenteditable="true"]').css('background-color', 'rgba(255, 100, 58, 0.43)');
+                }
+            });
+
+           $(document).on('keyup', function (e) {
+                $('#gen-template-frame').contents().find('div[contenteditable="true"]').css('background-color', 'transparent');
+            });
+        </script>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

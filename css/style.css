@@ -128,11 +128,29 @@ body {
 
 #footer {
     background: #fff;
-    margin-top: 100px;
+    margin-top: 45px;
     border-top: 1px solid rgba(0,0,0,.1);
     color: #999999 !important;
     font: 100 0.8em/1.5em "Open Sans","Helvetica Neue",Arial,sans-serif;
     text-align: center;
     color: #bbb;
     overflow: hidden;
+}
+
+.help-text {
+    color: #666666;
+}
+
+.heart {
+    color: #D40000;
+}
+
+
+.shortcut-key {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    color: #333333;
+    display: inline-block;
+    font-size: 13px;
+    padding: 2px;
 }
