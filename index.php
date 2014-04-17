@@ -71,7 +71,7 @@
                 </select>
             </div>
 
-            <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text.</p>
+            <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text. And click to edit.</p>
             
             <!-- TODO: Need to change this to support choosing other card templates. -->
             <iframe id="gen-template-frame" src="templates/reps-card.html"></iframe>
