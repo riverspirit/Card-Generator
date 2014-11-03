@@ -52,7 +52,7 @@
 
             <div class="gen-select-template-container">
                 Select card template: 
-                <select id="gen-select-template" class="">
+                <select id="gen-select-template" class="" onchange="change()">
                     <?php
                         $dir = __DIR__.'/templates';
 
@@ -74,14 +74,20 @@
             <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text. And click to edit.</p>
             
             <!-- TODO: Need to change this to support choosing other card templates. -->
-            <iframe id="gen-template-frame" src="templates/reps-card.html"></iframe>
+            <iframe id="gen-template-frame" src="templates/1. Reps Card (new).html"></iframe>
             
             <form id="gen-create-form" action="generate.php" method="post">
                 <input name="paper" type="hidden" value="card"/>
                 <input name="orientation" type="hidden" value="portrait"/>
 
                 <textarea name="html" id="gen-html-textarea"></textarea>
-
+                <script>
+                  	function change() { 
+                  		var sel = $('#gen-select-template option:selected').text();
+                  		var frame = $('#gen-template-frame');
+  						frame.attr('src', 'templates/'+sel+'.html');
+  					}
+                </script>
                 <div>
                     <input type="button" value="Generate Card" id="gen-card-button" class="button" />
                 </div>
