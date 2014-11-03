@@ -53,28 +53,17 @@
             <div class="gen-select-template-container">
                 Select card template: 
                 <select id="gen-select-template" class="" onchange="change()">
-                    <?php
-                        $dir = __DIR__.'/templates';
-
-                        if (is_dir($dir)) {
-                            if ($dh = opendir($dir)) {
-                                while (($file = readdir($dh)) !== false) {
-                                    if ($file != '.' && $file != '..') {
-                                        $template_name = rtrim($file, '.html');
-                                        echo "<option value='". $template_name ."'>". $template_name ."</option>";
-                                    }
-                                }
-                                closedir($dh);
-                            }
-                        }
-                    ?>
+                    <option value="Reps-Card 1">Reps-Card 1</option>
+                    <option value="Reps-Card 2">Reps-Card 2</option>
+                    <option value="Mozillians-Card">Mozillians-Card</option>
+                    <option value="FSA-Card">FSA-Card</option>
                 </select>
             </div>
 
             <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text. And click to edit.</p>
             
             <!-- TODO: Need to change this to support choosing other card templates. -->
-            <iframe id="gen-template-frame" src="templates/1. Reps Card (new).html"></iframe>
+            <iframe id="gen-template-frame" src="templates/Reps-Card 1.html"></iframe>
             
             <form id="gen-create-form" action="generate.php" method="post">
                 <input name="paper" type="hidden" value="card"/>
