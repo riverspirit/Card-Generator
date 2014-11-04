@@ -40,6 +40,10 @@ body {
     display: none;
 }
 
+#gen-html-back-textarea {
+    display: none;
+}
+
 #gen-card-layout {
     position: relative;
 }
@@ -47,6 +51,12 @@ body {
 #gen-template-frame {
     height: 227px;
     width: 388px;
+}
+
+#gen-template-back-frame {
+    height: 227px;
+    width: 388px;
+    display: none;
 }
 
 #header {
