@@ -14,6 +14,9 @@ Business card generator for the Mozilla community
 
 _(If that's too much for you, you can just send the template design to hello@mozillakerala.org)_
 
+## Dependencies ##
+* PHP5 with GD library
+
 ## Contributors ##
 * [jsx](https://github.com/riverspirit)
 * [shine](https://github.com/shinescodes)
