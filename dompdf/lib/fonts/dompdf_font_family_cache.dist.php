@@ -108,4 +108,25 @@
     'italic' => DOMPDF_FONT_DIR . 'DejaVuSerifCondensed-Italic',
     'normal' => DOMPDF_FONT_DIR . 'DejaVuSerifCondensed',
   ),
+  'open sans' => 
+  array (
+    'normal' => DOMPDF_FONT_DIR . 'OpenSans_Regular',
+    'bold' => DOMPDF_FONT_DIR . 'OpenSans_Bold',
+    'italic' => DOMPDF_FONT_DIR . 'OpenSans_Italic',
+    'bold_italic' => DOMPDF_FONT_DIR . 'OpenSans_BoldItalic',
+  ),
+  'meta bold' => 
+  array (
+    'normal' => DOMPDF_FONT_DIR . 'MetaBold',
+    'bold' => DOMPDF_FONT_DIR . 'MetaBold',
+    'italic' => DOMPDF_FONT_DIR . 'MetaBold',
+    'bold_italic' => DOMPDF_FONT_DIR . 'MetaBold',
+  ),
+  'meta medium' => 
+  array (
+    'normal' => DOMPDF_FONT_DIR . 'Meta-Medium-Regular',
+    'bold' => DOMPDF_FONT_DIR . 'Meta-Medium-Regular',
+    'italic' => DOMPDF_FONT_DIR . 'Meta-Medium-Regular',
+    'bold_italic' => DOMPDF_FONT_DIR . 'Meta-Medium-Regular',
+  ),
 ) ?>
