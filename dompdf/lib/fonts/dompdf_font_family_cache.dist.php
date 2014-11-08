@@ -129,4 +129,11 @@
     'italic' => DOMPDF_FONT_DIR . 'Meta-Medium-Regular',
     'bold_italic' => DOMPDF_FONT_DIR . 'Meta-Medium-Regular',
   ),
+  'open sans italic' => 
+  array (
+    'normal' => DOMPDF_FONT_DIR . 'OpenSans_Italic',
+    'bold' => DOMPDF_FONT_DIR . 'OpenSans_Italic',
+    'italic' => DOMPDF_FONT_DIR . 'OpenSans_Italic',
+    'bold_italic' => DOMPDF_FONT_DIR . 'OpenSans_Italic',
+  ),
 ) ?>
