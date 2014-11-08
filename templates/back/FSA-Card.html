@@ -1,42 +1,75 @@
 <html>
 <style>
+	@font-face {
+		font-family: "Open Sans";
+		src: url("../fonts/OpenSans_Regular.ttf");
+	}
+
+	@font-face {
+		font-family: "Open Sans Italic";
+		src: url("../fonts/OpenSans_Italic.ttf");
+	}
+
+	@font-face {
+		font-family: "Meta Medium";
+		src: url("../fonts/Meta-Medium-Regular.ttf");
+	}
+
 	* {
 		margin: 0;
 		padding: 0;
 		color: #ffffff;
-		font-family: Helvetica;
+		font-family: "Open Sans", Helvetica;
 		font-size: 13px;
 	}
 
 	.fsas-card-back {
 		background: #FF7400;
 		height: 272px;
-    	width: 395px;
-    	position: absolute;
+	    	width: 395px;
+    		position: absolute;
 	}
 
 	.logo-back {
-	    left: 80px;
-	    position: absolute;
-	    top: 50px;
-	    background: #FF7400;
+		left: 30px;
+		position: absolute;
+		top: 50px;
+		background: #FF7400;
 	}
 
 	.bottom-link-text-back {
 		font-size: 15px;
-        right: 20px;
-        position: absolute;
-        bottom: 15px;
-        background: #FF7400;
+	        right: 20px;
+	        position: absolute;
+	        bottom: 15px;
+	        background: #FF7400;
 	}
 
 	.text {
-		left: 180px;
+		left: 130px;
 		position: absolute;
-		top: 75px;
+		top: 70px;
 		color: #ffffff;
 		background: #FF7400;
 	}
+
+	.firefox {
+		font-family: "Meta Medium";
+		font-weight: 600;
+		font-size: 20px;
+		color: #FFFFFF;
+		background: #FF7400;
+	}
+
+	.student-ambassadors {
+                font-family: "Open Sans Italic";
+		font-style: italic;
+		font-weight: 600;
+                font-size: 24px;
+                color: #FFFFFF;
+                background: #FF7400;
+	}
+
 </style>
 
 <div id="card-back" class="fsas-card-back">
@@ -45,7 +78,8 @@
 		<img src="http://cards.mozillakerala.org/template_images/fsas-logo.png" height="120px" width="100px" style="background: #FF7400;" />
 	</div>
 	<div class="text">
-		<span style="font-size: 15px; color: #ffffff; background: #FF7400;">Firefox</span><br><span style="font-size: 20px; color: #ffffff; background: #FF7400;">Student<br>Ambassadors</span>
+		<span class="firefox">Firefox</span><br>
+		<span class="student-ambassadors">Student Ambassadors</span>
 	</div>
 	<div class="bottom-link-text-back">www.mozilla.org</div>
 </div>
