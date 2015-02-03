@@ -70,8 +70,8 @@
             <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text. And click to edit.</p>
 
             <!-- TODO: Need to change this to support choosing other card templates. -->
-            <iframe id="gen-template-frame" src="templates/Reps-Card 1.html"></iframe>
-            <iframe id="gen-template-back-frame" src="templates/back/Reps-Card 1.html"></iframe>
+            <iframe id="gen-template-frame" src="templates/FSA-Card.html"></iframe>
+            <iframe id="gen-template-back-frame" src="templates/back/FSA-Card.html"></iframe>
 
             <form id="gen-create-form" action="generate.php" method="post">
                 <input name="paper" type="hidden" value="card"/>
