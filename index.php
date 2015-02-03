@@ -56,10 +56,14 @@
                 Select card template: 
                 <select id="gen-select-template" class="" onchange="change()">
 					<?php
-					$files = scandir( './templates'  );
+					$files = scandir( './templates' );
+					$first = '';
 
 					foreach ( $files as $file ) {
 						if ( is_file( './templates' . '/' . $file ) ) {
+							if ( empty( $first ) ) {
+								$first = $file;
+							}
 							echo '<option value="' . str_replace( '.html', '', $file ) . '">' . str_replace( '.html', '', $file ) . '</option>' . "\n";
 						}
 					}
@@ -70,8 +74,8 @@
             <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text. And click to edit.</p>
 
             <!-- TODO: Need to change this to support choosing other card templates. -->
-            <iframe id="gen-template-frame" src="templates/FSA-Card.html"></iframe>
-            <iframe id="gen-template-back-frame" src="templates/back/FSA-Card.html"></iframe>
+            <iframe id="gen-template-frame" src="templates/<?php echo $first ?>"></iframe>
+            <iframe id="gen-template-back-frame" src="templates/back/<?php echo $first ?>"></iframe>
 
             <form id="gen-create-form" action="generate.php" method="post">
                 <input name="paper" type="hidden" value="card"/>
