@@ -58,14 +58,22 @@
 					<?php
 					$files = scandir( './templates' );
 					$first = '';
-
-					foreach ( $files as $file ) {
+					foreach ( $files as $key => $file ) {
 						if ( is_file( './templates' . '/' . $file ) ) {
-							if ( empty( $first ) ) {
-								$first = $file;
+							if ( 'Reps-Card 1.html' === $file ) {
+								unset( $files[$key] );
 							}
-							echo '<option value="' . str_replace( '.html', '', $file ) . '">' . str_replace( '.html', '', $file ) . '</option>' . "\n";
+						} else {
+							unset( $files[$key] );
 						}
+					}
+					$files[0] = 'Reps-Card 1.html';
+					ksort($files);
+					foreach ( $files as $file ) {
+						if ( empty( $first ) ) {
+							$first = $file;
+						}
+						echo '<option value="' . str_replace( '.html', '', $file ) . '">' . str_replace( '.html', '', $file ) . '</option>' . "\n";
 					}
 					?>
                 </select>
