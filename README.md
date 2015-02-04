@@ -21,3 +21,4 @@ _(Or if that's too much for you, you can just send the template design to hello@
 * [jsx](https://github.com/riverspirit)
 * [shine](https://github.com/shinescodes)
 * [Tanay](https://github.com/tanay1337)
+* [Brylie](https://github.com/brylie)
