@@ -18,11 +18,10 @@ if ( isset( $_POST[ "html" ] ) && isset( $_POST[ "html2" ] ) ) {
 	$options->set( 'isRemoteEnabled', true );
 	$dompdf->setOptions($options);
 	$dompdf->load_html( $card_data );
-	$dompdf->setPaper( $_POST[ "paper" ], $_POST[ "orientation" ] );
+	$dompdf->setPaper( 'card', 'portrait' );
 	$dompdf->render();
 
-	$dompdf->stream( "card", array( "Attachment" => false ) );
+	//$dompdf->stream( "card", array( "Attachment" => false ) );
 
-	exit( 0 );
+	//exit( 0 );
 }
-?>

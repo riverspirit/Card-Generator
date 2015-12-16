@@ -86,8 +86,6 @@
             <iframe id="gen-template-back-frame" src="templates/back/<?php echo $first ?>"></iframe>
 
             <form id="gen-create-form" action="generate.php" method="post">
-                <input name="paper" type="hidden" value="card"/>
-                <input name="orientation" type="hidden" value="portrait"/>
 
                 <textarea name="html" id="gen-html-textarea"></textarea>
                 <textarea name="html2" id="gen-html-back-textarea"></textarea>
