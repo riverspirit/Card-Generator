@@ -1,23 +1,28 @@
 <?php
 
-require_once("dompdf/dompdf_config.inc.php");
+require_once("vendor/autoload.php");
 
-if ( isset( $_POST["html"] ) && isset( $_POST["html2"] )) {
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
-  if (get_magic_quotes_gpc()) {
-      $_POST["html"] = stripslashes($_POST["html"]);
-      $_POST["html2"] = stripslashes($_POST["html2"]);
-  }
+if ( isset( $_POST[ "html" ] ) && isset( $_POST[ "html2" ] ) ) {
 
-  $card_data = $_POST["html"].$_POST["html2"];
-  $dompdf = new DOMPDF();
-  $dompdf->load_html($card_data);
-  $dompdf->set_paper($_POST["paper"], $_POST["orientation"]);
-  $dompdf->render();
+	if ( get_magic_quotes_gpc() ) {
+		$_POST[ "html" ] = stripslashes( $_POST[ "html" ] );
+		$_POST[ "html2" ] = stripslashes( $_POST[ "html2" ] );
+	}
 
-  $dompdf->stream("card.pdf", array("Attachment" => false));
+	$card_data = $_POST[ "html" ] . $_POST[ "html2" ];
+	$card_data = str_replace('../fonts/', 'fonts/', $card_data);
+	$dompdf = new Dompdf();
+	$options = new Options();
+	$options->set( 'isRemoteEnabled', true );
+	$dompdf->setOptions($options);
+	$dompdf->load_html( $card_data );
+	$dompdf->setPaper( array(0,0,295.00, 175.50), 'portrait' );
+	$dompdf->render();
 
-  exit(0);
+	$dompdf->stream( "card", array( "Attachment" => false ) );
+
+	exit( 0 );
 }
-
-?>
