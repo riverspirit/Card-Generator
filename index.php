@@ -54,7 +54,7 @@
 
             <div class="gen-select-template-container">
                 Select card template: 
-                <select id="gen-select-template" class="" onchange="change()">
+                <select id="gen-select-template" class="" onchange="change()" autocomplete="off">
 					<?php
 					$files = scandir( './templates' );
 					$first = '';
