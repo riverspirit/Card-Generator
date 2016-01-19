@@ -23,3 +23,6 @@ _(Or if that's too much for you, you can just send the template design to hello@
 * [Tanay](https://github.com/tanay1337)
 * [Brylie](https://github.com/brylie)
 * [Mte90](https://github.com/Mte90)
+* [ekuttan](https://github.com/ekuttan)
+* [Elio Qoshi](https://github.com/elioqoshi)
+* [Gabriel Mičko](https://github.com/gabrielmicko)
