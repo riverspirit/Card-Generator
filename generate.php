@@ -7,28 +7,38 @@ use Dompdf\Dompdf;
 use Dompdf\Options;
 
 function resolveDependency($html) {
-	$html = str_replace('../fonts/', 'fonts/', $html);
-	$html = str_replace('src="../', 'src="'. $GLOBALS['IMG_PATH'], $html);
+	$html = str_replace('src="../', 'src="'. $GLOBALS['RESOURCE'], $html);
 	return $html;
+}
+
+function getCSSFromHTML($html) {
+	$css = '';
+	preg_match_all("/(?<=link[\s]rel=\"stylesheet\"[\s]href=\"[.][.]\/css\/)(.*?)\"/", $html, $fmatches);
+
+	foreach($fmatches as $key => $m) {
+		if($key % 2 == 1) {
+			$css .= file_get_contents('./css/' . $m[0]);
+		}
+	}
+
+	return $css;
 }
 
 if ( isset( $_POST[ "html" ] ) && isset( $_POST[ "html2" ] ) ) {
 
-	if ( get_magic_quotes_gpc() ) {
-		$_POST[ "html" ] = stripslashes( $_POST[ "html" ] );
-		$_POST[ "html2" ] = stripslashes( $_POST[ "html2" ] );
-	}
+	$frontPage = resolveDependency(stripslashes( $_POST[ "html" ] ));
+	$backPage = resolveDependency(stripslashes( $_POST[ "html2" ]) );
 
-	$card_data = resolveDependency($_POST[ "html" ] . $_POST[ "html2" ]);
-	$dompdf = new Dompdf();
-	$options = new Options();
-	$options->set( 'isRemoteEnabled', true );
-	$dompdf->setOptions($options);
-	$dompdf->load_html( $card_data );
-	$dompdf->setPaper( array(0,0,295.00, 175.50), 'portrait' );
-	$dompdf->render();
+	$frontPageCSS = getCSSFromHTML($frontPage);
+	$backPageCSS = getCSSFromHTML($backPage);
 
-	$dompdf->stream( "card", array( "Attachment" => false ) );
+	$mpdf = new mPDF('utf-8', array(102, 60), 0, '', 0, 0, 0, 0, 0, 0);
+	$mpdf->WriteHTML($frontPageCSS, 1);
+	$mpdf->WriteHTML($frontPage, 0);
+	$mpdf->WriteHTML('<pagebreak>', 2);
+	$mpdf->WriteHTML($backPageCSS, 1);
+	$mpdf->WriteHTML($backPage, 0);
+	$mpdf->Output('card.pdf', 'I');
 
 	exit( 0 );
 }

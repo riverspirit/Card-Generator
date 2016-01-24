@@ -103,7 +103,7 @@
                 </div>
             </form>
 
-            <div id="footer"><br/>Created by fox lovers in Kerala | <a href="https://github.com/MozillaKerala/Card-Generator/">Grab the code</a> and improve it. | <a href="https://github.com/MozillaKerala/Card-Generator/tree/master#how-to-add-new-card-template">Add</a> a new card template.<br/><br/></div>
+            <div id="footer"><br/>Created by fox lovers in Kerala & Hungary | <a href="https://github.com/MozillaKerala/Card-Generator/">Grab the code</a> and improve it. | <a href="https://github.com/MozillaKerala/Card-Generator/tree/master#how-to-add-new-card-template">Add</a> a new card template.<br/><br/></div>
 
         </div>
 
