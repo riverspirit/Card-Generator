@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url("../../fonts/OpenSans_Regular.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-family: Helvetica;
+	font-size: 13px;
+	background: #0096DD;
+}
+
+
+.logo-back {
+	left: 70px;
+	position: absolute;
+	top: 90px;
+	background: #0096DD;
+}
+
+.bottom-link-text-back {
+	font-size: 15px;
+	right: 20px;
+	position: absolute;
+	bottom: 15px;
+	background: #0096DD;
+}
