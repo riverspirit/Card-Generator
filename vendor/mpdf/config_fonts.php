@@ -93,11 +93,7 @@ $this->fontdata = array(
 	),
 
 	"opensans" => array(
-<<<<<<< HEAD
 		'R' => "OpenSans_Regular.ttf",
-=======
-		'R' => "OpenSans-Regular.ttf",
->>>>>>> MozillaKerala/master
 		'B' => "OpenSans-Bold.ttf",
 		'I' => "OpenSans-Italic.ttf",
 		'BI' => "OpenSans-BoldItalic.ttf",
