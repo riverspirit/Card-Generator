@@ -15,7 +15,6 @@ img, video, object, embed { max-width: 100%; height: auto; }
 
 /* @General styles ***/
 html {
-    border-top: 2px solid #fff;
     background:url("../images/bg.png") repeat-x #fff;
 }
 body {
@@ -32,8 +31,17 @@ body {
     color: #000000;
 }
 
+.content {
+
+}
+main  {
+  flex: 1;
+}
 #page{
     text-align: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 #gen-html-textarea {
@@ -51,6 +59,7 @@ body {
 #gen-template-frame {
     height: 227px;
     width: 388px;
+    margin: 0 auto;
 }
 
 #gen-template-back-frame {
@@ -70,6 +79,10 @@ body {
     margin-bottom: 10px;
     padding: 6px 20px;
     text-align: right;
+}
+
+#header #tabzilla {
+  margin-top: -6px;
 }
 
 

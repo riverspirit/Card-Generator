@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: "Open Sans Light";
+	src: url("../../fonts/OpenSans_Light.ttf");
+}
+
+@font-face {
 	font-family: "Font Awesome";
 	src: url("../../fonts/fontawesome.ttf");
 }
@@ -19,13 +24,14 @@ body {
 
 .fontawesome {
 	font-family: "Font Awesome";
-	font-size: 15px;
+	font-size: 20px;
+	color: #484a49;
 }
 
 .logo {
 	left: 31px;
 	position: absolute;
-	top: 10px;
+	top: 34px;
 }
 
 .name {
@@ -37,15 +43,15 @@ body {
 }
 
 .subtitle {
-	font-size: 13px;
+	font-size: 15px;
 	position: absolute;
-	top: 36px;
+	top: 37px;
 	left: 180px;
 	color: #8899a6;
 	line-height: 1;
 }
 
-.skills {
+.languages {
 	font-size: 12px;
 	left: 180px;
 	position: absolute;
@@ -53,12 +59,32 @@ body {
 	color: #000000;
 }
 
+.languages-inner {
+	font-size: 12px;
+	left: 209px;
+	position: absolute;
+	top: 66px;
+	color: #8899a6;
+	line-height: 1.1;
+	width: 178px;
+}
+
+.skills {
+	font-size: 12px;
+	left: 180px;
+	position: absolute;
+	top: 94px;
+	color: #000000;
+}
+
 .skills-inner {
 	font-size: 12px;
-	left: 200px;
+	left: 209px;
 	position: absolute;
-	top: 62px;
+	top: 93px;
 	color: #8899a6;
+	line-height: 1.1;
+	width: 178px;
 }
 
 .info {
@@ -81,16 +107,18 @@ body {
 	font-size: 12px;
 	left: 180px;
 	position: absolute;
-	top: 115px;
+	top: 131px;
 	color: #000000;
 }
 
 .links-inner {
 	font-size: 12px;
-	left: 200px;
+	left: 209px;
 	position: absolute;
-	top: 115px;
+	top: 130px;
 	color: #8899a6;
+	line-height: 1.1;
+	width: 178px;
 }
 
 .bottom-link {
@@ -104,9 +132,17 @@ body {
 }
 
 .bottom-link-text {
-	font-size: 15px;
 	right: 20px;
 	position: absolute;
-	bottom: 15px;
-	background: #0096DD;
+	bottom: 7px;
+}
+
+.bottom-position {
+	left: 20px;
+	position: absolute;
+	bottom: 7px;
+	font-size: 15px;
+	color: #fff;
+	font-family: "Open Sans Light", Helvetica;
+	font-weight: lighter;
 }
