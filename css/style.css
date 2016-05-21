@@ -39,9 +39,6 @@ main  {
 }
 #page{
     text-align: center;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
 #gen-html-textarea {
@@ -158,7 +155,6 @@ main  {
     text-align: center;
     color: #bbb;
     overflow: hidden;
-    flex: 1;
 }
 
 .help-text {
