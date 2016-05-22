@@ -1,10 +1,20 @@
 @font-face {
-	font-family: "Open Sans";
+	font-family: "metawebprobold";
+	src: url("../../fonts/MetaWebPro-Bold.ttf");
+}
+
+@font-face {
+	font-family: "metawebpromedium";
+	src: url("../../fonts/MetaWebPro-Medium.ttf");
+}
+
+@font-face {
+	font-family: "opensans";
 	src: url("../../fonts/OpenSans_Regular.ttf");
 }
 
 @font-face {
-	font-family: "Open Sans Light";
+	font-family: "opensanslight";
 	src: url("../../fonts/OpenSans_Light.ttf");
 }
 
@@ -16,7 +26,6 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: "Open Sans", Helvetica;
 	background: #ffffff;
 }
 
@@ -29,10 +38,11 @@ body {
 .txt {
 	color: #9CA8A5;
 	font-size: 11.6px;
+	font-family: "opensans";
 }
 
 .highlight {
-	color: #56AFDE;
+	color: #A92D27;
 }
 
 .volunteer {
@@ -41,23 +51,25 @@ body {
   left: 21.9832px;
   top: 222.716px;
   font-size: 16.0843px;
-  font-family: "Open Sans Light";
+  font-family: "opensanslight";
 }
 
 .footer {
-	background-color: #2F9CD6;
+	background-color: #A92D27;
 }
 
 .twitter {
   position: absolute;
   left: 21.9837px;
   top: 154.203px;
+	font-family: "opensans";
 }
 
 .irc {
   position: absolute;
   left: 21.9837px;
   top: 168.24px;
+	font-family: "opensans";
 }
 
 .logo {
@@ -88,7 +100,7 @@ body {
 	left: 165px;
 	top: 18px;
 	width: 265px;
-  font-family: "Open Sans Light";
+  font-family: "opensanslight";
 }
 
 .position {
@@ -98,6 +110,7 @@ body {
 	top: 39.2898px;
   width: 265px;
 	color: #9CA8A5;
+	font-family: "opensans";
 }
 
 .contact-ico,
@@ -145,4 +158,25 @@ body {
   width: 100%;
   left: 0;
   height: 49px;
+}
+
+
+.mozilla {
+  font-family: "metawebprobold";
+	color: #fff;
+	position: absolute;
+	left: 281px;
+	top: 216px;
+	font-size: 28px;
+	letter-spacing: -0.5px;
+}
+
+.reps {
+  font-family: "metawebpromedium";
+	color: #fff;
+	position: absolute;
+	left: 368px;
+	top: 216px;
+	font-size: 28px;
+	letter-spacing: -0.5px;
 }

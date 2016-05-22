@@ -39,14 +39,14 @@
           					$first = '';
           					foreach ( $files as $key => $file ) {
           						if ( is_file( './templates' . '/' . $file ) ) {
-          							if ( 'Reps-Card 1.html' === $file ) {
+          							if ( 'Reps-Card.html' === $file ) {
           								unset( $files[$key] );
           							}
           						} else {
           							unset( $files[$key] );
           						}
           					}
-          					$files[0] = 'Reps-Card 1.html';
+          					$files[0] = 'Reps-Card.html';
           					ksort($files);
           					foreach ( $files as $file ) {
           						if ( empty( $first ) ) {
