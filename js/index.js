@@ -1,11 +1,11 @@
 $(document).on('keydown', function (e) {
   if (e.keyCode === 16) {
-    $('#gen-template-frame').contents().find('div[contenteditable]').css('background-color', 'rgba(255, 100, 58, 0.43)');
+    $('#gen-template-frame').contents().find('[contenteditable]').css('background-color', 'rgba(255, 100, 58, 0.43)');
   }
 });
 
 $(document).on('keyup', function (e) {
-  $('#gen-template-frame').contents().find('div[contenteditable]').css('background-color', 'transparent');
+  $('#gen-template-frame').contents().find('[contenteditable]').css('background-color', 'transparent');
 });
 
 function change() {

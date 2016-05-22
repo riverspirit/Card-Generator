@@ -31,8 +31,8 @@ if ( isset( $_POST[ "html" ] ) && isset( $_POST[ "html2" ] ) ) {
 
 	$frontPageCSS = getCSSFromHTML($frontPage);
 	$backPageCSS = getCSSFromHTML($backPage);
-
-	$mpdf = new mPDF('utf-8', array(102, 60), 0, '', 0, 0, 0, 0, 0, 0);
+	
+	$mpdf = new mPDF('utf-8', array(93, 54.87), 0, '', 0, 0, 0, 0, 0, 0);
 	$mpdf->WriteHTML($frontPageCSS, 1);
 	$mpdf->WriteHTML($frontPage, 0);
 	$mpdf->WriteHTML('<pagebreak>', 2);

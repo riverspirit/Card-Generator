@@ -3,27 +3,33 @@
 	src: url("../../fonts/OpenSans_Regular.ttf");
 }
 
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: url("../../fonts/OpenSans_Light.ttf");
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	font-family: Helvetica;
-	font-size: 13px;
-	background: #0096DD;
+	font-family: "Open Sans";
+	background-color: #2F9CD6;
 }
 
 
 .logo-back {
-	left: 70px;
+	width: 212px;
 	position: absolute;
-	top: 90px;
-	background: #0096DD;
+	left: 125px;
+	top: 105px;
 }
 
-.bottom-link-text-back {
-	font-size: 15px;
-	right: 20px;
+.link {
+	font-size: 15.0843px;
+	color: #fff;
 	position: absolute;
-	bottom: 15px;
-	background: #0096DD;
+	right: 20px;
+	bottom: 20px;
+	font-family: "Open Sans Light";
 }

@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "opensanslight";
+	src: url("../../fonts/OpenSans_Light.ttf");
+}
+
+@font-face {
+	font-family: "metawebprobold";
+	src: url("../../fonts/MetaWebPro-Bold.ttf");
+}
+
+@font-face {
+	font-family: "metawebpromedium";
+	src: url("../../fonts/MetaWebPro-Medium.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	background-color: #A92D27;
+}
+
+.back-logo {
+	position: absolute;
+	left: 110px;
+	top: 70px;
+}
+
+.mozilla-back {
+	font-family: "metawebprobold";
+	color: #fff;
+	position: absolute;
+	left: 200px;
+	top: 71px;
+	font-size: 40px;
+	letter-spacing: -0.5px;
+}
+
+.reps-back {
+	font-family: "metawebpromedium";
+	color: #fff;
+	position: absolute;
+	left: 200px;
+	top: 92px;
+	font-size: 66px;
+	letter-spacing: -0.5px;
+}
+
+.link {
+	font-size: 15.0843px;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-family: "opensanslight";
+}

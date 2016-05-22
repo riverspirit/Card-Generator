@@ -57,9 +57,10 @@ main  {
 }
 
 #gen-template-frame {
-    height: 227px;
-    width: 388px;
+    width: 439px;
+    height: 259px;
     margin: 0 auto;
+    border: 0;
 }
 
 #gen-template-back-frame {
@@ -79,6 +80,7 @@ main  {
     margin-bottom: 10px;
     padding: 6px 20px;
     text-align: right;
+    border-top: 2px solid #fff;
 }
 
 #header #tabzilla {

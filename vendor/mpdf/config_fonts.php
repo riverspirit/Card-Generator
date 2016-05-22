@@ -84,7 +84,24 @@ $this->fontdata = array(
 	"fontawesome" => array(
 		'R' => "fontawesome.ttf"
 	),
-
+	"firasans" => array(
+		'R' => "FiraSans-Regular.ttf",
+	),
+	"firasansbold" => array(
+		'R' => "FiraSans-Bold.ttf",
+	),
+	"firasansbolditalic" => array(
+		'R' => "FiraSans-BookItalic.ttf",
+	),
+	"firasanslight" => array(
+		'R' => "FiraSans-Light.ttf",
+	),
+	"firasanslightitalic" => array(
+		'R' => "FiraSans-LightItalic.ttf",
+	),
+	"firasansitalic" => array(
+		'R' => "FiraSans-Italic.ttf",
+	),
 	"roboto" => array(
 		'R' => "Roboto-Regular.ttf",
 		'B' => "Roboto-Bold.ttf",
@@ -93,17 +110,36 @@ $this->fontdata = array(
 	),
 
 	"opensans" => array(
-		'R' => "OpenSans_Regular.ttf",
+		'R' => "OpenSans-Regular.ttf",
 		'B' => "OpenSans-Bold.ttf",
 		'I' => "OpenSans-Italic.ttf",
 		'BI' => "OpenSans-BoldItalic.ttf",
+	),
+
+	"opensanslight" => array(
+		'R' => "OpenSans-Light.ttf"
 	),
 
 	"metamediumregular" => array(
 		'R' => "Meta-Medium-Regular.ttf"
 	),
 	"metabold" => array(
-		'R' => "MetaBold.ttf"
+		'R' => "MetaBold.ttf",
+		'B' => "MetaBold.ttf",
+		'I' => "MetaBold.ttf",
+		'BI' => "MetaBold.ttf"
+	),
+	"metanormal" => array(
+		'R' => "MetaNormal.ttf",
+		'B' => "MetaNormal.ttf",
+		'I' => "MetaNormal.ttf",
+		'BI' => "MetaNormal.ttf"
+	),
+	"metawebprobold" => array(
+		'R' => "MetaWebPro-Bold.ttf",
+	),
+	"metawebpromedium" => array(
+		'R' => "MetaWebPro-Medium.ttf",
 	),
 	"dejavusanscondensed" => array(
 		'R' => "DejaVuSansCondensed.ttf",
@@ -322,15 +358,15 @@ $this->sans_fonts = array('opensans', 'dejavusanscondensed', 'sans', 'sans-serif
 	'arial', 'helvetica', 'verdana', 'geneva', 'lucida', 'arialnarrow', 'arialblack', 'arialunicodems',
 	'franklin', 'franklingothicbook', 'tahoma', 'garuda', 'calibri', 'trebuchet', 'lucidagrande', 'microsoftsansserif',
 	'trebuchetms', 'lucidasansunicode', 'franklingothicmedium', 'albertusmedium', 'xbriyaz', 'albasuper', 'quillscript',
-	'humanist777', 'humanist777black', 'humanist777light', 'futura', 'hobo', 'segoeprint'
+	'humanist777', 'humanist777black', 'humanist777light', 'futura', 'hobo', 'segoeprint', 'metabold', 'metanormal'
 );
 
 $this->serif_fonts = array('opensans', 'dejavuserifcondensed', 'serif', 'dejavuserif', 'freeserif', 'liberationserif',
 	'timesnewroman', 'times', 'centuryschoolbookl', 'palatinolinotype', 'centurygothic',
 	'bookmanoldstyle', 'bookantiqua', 'cyberbit', 'cambria',
-	'norasi', 'charis', 'palatino', 'constantia', 'georgia', 'albertus', 'xbzar', 'algerian', 'garamond',
+	'norasi', 'charis', 'palatino', 'constantia', 'georgia', 'albertus', 'xbzar', 'algerian', 'garamond', 'metabold', 'metanormal'
 );
 
 $this->mono_fonts = array('opensans', 'dejavusansmono', 'mono', 'monospace', 'freemono', 'liberationmono', 'courier', 'ocrb', 'ocr-b', 'lucidaconsole',
-	'couriernew', 'monotypecorsiva'
+	'couriernew', 'monotypecorsiva', 'metabold', 'metanormal'
 );

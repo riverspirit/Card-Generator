@@ -79,7 +79,7 @@ $this->progbar_altHTML = ''; // Should include <html> and <body> but NOT end tag
 // Can include <head> and link to stylesheet etc.
 // e.g. '<html><body><p><img src="loading.gif" /> Creating PDF file. Please wait...</p>';
 
-$this->dpi = 96; // To interpret "px" pixel values in HTML/CSS (see img_dpi below)
+$this->dpi = 120; // To interpret "px" pixel values in HTML/CSS (see img_dpi below)
 // Automatically correct for tags where HTML specifies optional end tags e.g. P,LI,DD,TD
 // If you are confident input html is valid XHTML, turning this off may make it more reliable(?)
 $this->allow_html_optional_endtags = true;
@@ -231,7 +231,7 @@ $this->decimal_align = array('DP' => '.', 'DC' => ',', 'DM' => "\xc2\xb7", 'DA' 
 // IMAGES
 $this->interpolateImages = false; // if image-rendering=='auto', this defines value for image-rendering
 // if true, image interpolation shall be performed by a conforming reader
-$this->img_dpi = 96; // Default dpi to output images if size not defined
+$this->img_dpi = 120; // Default dpi to output images if size not defined
 // See also above "dpi"
 
 // TEXT SPACING & JUSTIFICATION
@@ -260,8 +260,8 @@ $this->normalLineheight = 1.33; // Default Value used for line-height when CSS s
 
 $this->adjustFontDescLineheight = 1.14; // Correction factor applied to lineheight values derived from 'win', 'mac', 'winTypo'
 // Small Caps
-$this->smCapsScale = 0.75; // Factor of 1 to scale capital letters
-$this->smCapsStretch = 110; // % to stretch small caps horizontally (i.e. 100 = no stretch)
+$this->smCapsScale = 1; // Factor of 1 to scale capital letters
+$this->smCapsStretch = 100; // % to stretch small caps horizontally (i.e. 100 = no stretch)
 // Line-breaking
 // The alternative to these next 2 is the use of U+200B Zero-width space
 // These are only effective if using OTL for the fonts
@@ -553,7 +553,7 @@ $this->SHYlanguages = array('en', 'de', 'es', 'fi', 'fr', 'it', 'nl', 'pl', 'ru'
 $this->default_lineheight_correction = 1.2; // Value 1 sets lineheight=fontsize height;
 // Value used if line-height not set by CSS (usually is)
 
-$this->fontsizes = array('XX-SMALL' => 0.7, 'X-SMALL' => 0.77, 'SMALL' => 0.86, 'MEDIUM' => 1, 'LARGE' => 1.2, 'X-LARGE' => 1.5, 'XX-LARGE' => 2);
+$this->fontsizes = array('XX-SMALL' => 1, 'X-SMALL' => 1, 'SMALL' => 1, 'MEDIUM' => 1, 'LARGE' => 1, 'X-LARGE' => 1, 'XX-LARGE' => 1);
 
 // CHARACTER PATTERN MATCHES TO DETECT LANGUAGES
 // pattern used to detect RTL characters -> force RTL
