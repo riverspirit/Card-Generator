@@ -59,21 +59,33 @@ body {
 }
 
 .twitter {
-  position: absolute;
-  left: 21.9837px;
-  top: 154.203px;
+	position: absolute;
+	left: 21.9837px;
+	top: 155.203px;
+	line-height: 1;
 	font-family: "opensans";
 }
 
 .irc {
-  position: absolute;
-  left: 21.9837px;
-  top: 168.24px;
+	position: absolute;
+	left: 21.9837px;
+	top: 171.24px;
+	line-height: 1;
 	font-family: "opensans";
 }
 
 .logo {
-  width: 110px;
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: block;
+}
+
+.avatar {
+  width: 128px;
+  height: 128px;
   position: absolute;
   left: 20px;
   top: 20px;
@@ -98,9 +110,10 @@ body {
 	position: absolute;
 	font-size: 17.5px;
 	left: 165px;
-	top: 18px;
+	top: 22px;
 	width: 265px;
-  font-family: "opensanslight";
+	font-family: "opensanslight";
+	line-height: 1;
 }
 
 .position {

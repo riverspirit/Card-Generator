@@ -1,11 +1,11 @@
 @font-face {
-	font-family: "Open Sans";
+	font-family: "opensans";
 	src: url("../../fonts/OpenSans_Regular.ttf");
 }
 
 
 @font-face {
-	font-family: "Open Sans Light";
+	font-family: "opensanslight";
 	src: url("../../fonts/OpenSans_Light.ttf");
 }
 
@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	font-family: "Open Sans";
+	font-family: "opensans";
 	background-color: #2F9CD6;
 }
 
@@ -31,5 +31,5 @@ body {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	font-family: "Open Sans Light";
+	font-family: "opensanslight";
 }

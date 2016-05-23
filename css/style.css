@@ -17,8 +17,24 @@ img, video, object, embed { max-width: 100%; height: auto; }
 html {
     background:url("../images/bg.png") repeat-x #fff;
 }
+
+@font-face {
+	font-family: "opensans";
+	src: url("../fonts/OpenSans_Regular.ttf");
+}
+
+@font-face {
+	font-family: "opensanslight";
+	src: url("../fonts/OpenSans_Light.ttf");
+}
+
+@font-face {
+	font-family: "Font Awesome";
+	src: url("../fonts/fontawesome.ttf");
+}
+
 body {
-    font-family: Ubuntu,OpenSansLight,Arial,Tahoma,Ubuntu,"Sans serif";
+    font-family: "opensanslight";
     color: #333;
     word-wrap: break-word;
     margin: 0;
@@ -177,4 +193,41 @@ main  {
     display: inline-block;
     font-size: 13px;
     padding: 2px;
+}
+
+.iframe-holder {
+  position: relative;
+  width: 439px;
+  margin: 0 auto;
+}
+
+.upload-avatar {
+  display: block;
+  position: absolute;;
+  top: 55px;
+  left: 60px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-avatar.show,
+.upload-avatar:hover {
+  opacity: 0.9;
+}
+
+.upload-icon {
+  font-family: "Font Awesome";
+  font-size: 50px;
+  color: rgba(255, 100, 58, 0.8);
+}
+
+.upload-avatar .notification {
+  color: rgba(255, 100, 58, 0.8);
+  font-size: 11px;
+  text-shadow: 0px 0px 2px #727171;
+  margin-top: -7px;
+}
+
+.upload-avatar input {
+  display: none;
 }
