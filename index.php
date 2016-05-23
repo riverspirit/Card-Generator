@@ -59,7 +59,14 @@
             </div>
             <p class="help-text"><span class="heart">❤</span> Press <span class="shortcut-key">SHIFT</span> to highlight editable text. And click to edit.</p>
             <!-- TODO: Need to change this to support choosing other card templates. -->
-            <iframe id="gen-template-frame" src="templates/<?php echo $first ?>"></iframe>
+            <div class="iframe-holder">
+              <label for="avatar" class="upload-avatar">
+                <div class="upload-icon">&#xf0ee;</div>
+                <div class="notification">128x128</div>
+                <input id="avatar" type="file" onchange="previewFile()">
+              </label>
+              <iframe id="gen-template-frame" src="templates/<?php echo $first ?>"></iframe>
+            </div>
             <iframe id="gen-template-back-frame" src="templates/back/<?php echo $first ?>"></iframe>
             <form id="gen-create-form" action="generate.php" method="post">
                 <textarea name="html" id="gen-html-textarea"></textarea>
@@ -68,6 +75,7 @@
                     <input type="button" value="Generate Card" id="gen-card-button" class="button" />
                 </div>
             </form>
+            <br>
           </main>
           <div id="footer"><br/>Created by fox lovers in Kerala & Hungary | <a href="https://github.com/MozillaKerala/Card-Generator/">Grab the code</a> and improve it. | <a href="https://github.com/MozillaKerala/Card-Generator/tree/master#how-to-add-new-card-template">Add</a> a new card template.<br/><br/></div>
         </div>

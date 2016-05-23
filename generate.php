@@ -7,7 +7,9 @@ use Dompdf\Dompdf;
 use Dompdf\Options;
 
 function resolveDependency($html) {
+	$html = str_replace('src="../../', 'src="'. $GLOBALS['RESOURCE'], $html);
 	$html = str_replace('src="../', 'src="'. $GLOBALS['RESOURCE'], $html);
+
 	return $html;
 }
 
@@ -31,7 +33,7 @@ if ( isset( $_POST[ "html" ] ) && isset( $_POST[ "html2" ] ) ) {
 
 	$frontPageCSS = getCSSFromHTML($frontPage);
 	$backPageCSS = getCSSFromHTML($backPage);
-	
+
 	$mpdf = new mPDF('utf-8', array(93, 54.87), 0, '', 0, 0, 0, 0, 0, 0);
 	$mpdf->WriteHTML($frontPageCSS, 1);
 	$mpdf->WriteHTML($frontPage, 0);
