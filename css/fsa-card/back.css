@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "firasansitalic";
+	src: url("../../fonts/FiraSans-Italic.ttf");
+}
+
+@font-face {
+	font-family: "firasans";
+	src: url("../../fonts/FiraSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "opensanslight";
+	src: url("../../fonts/OpenSans_Light.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	background-color: #FC501C;;
+}
+
+.back-logo {
+	position: absolute;
+	left: 105px;
+	top: 70px;
+}
+
+.firefox-back {
+	font-family: "firasans";
+	color: #fff;
+	position: absolute;
+	left: 180px;
+	top: 75px;
+	font-size: 17px;
+}
+
+.fsa-back {
+	font-family: "firasansitalic";
+	color: #fff;
+	position: absolute;
+	left: 180px;
+	top: 94px;
+	font-size: 29px;
+	line-height: 1;
+}
+
+.link {
+	font-size: 15.0843px;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-family: "opensanslight";
+}

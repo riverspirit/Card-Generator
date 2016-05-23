@@ -1,24 +1,46 @@
 <?php
 
-require_once("dompdf/dompdf_config.inc.php");
+require_once("vendor/autoload.php");
+require_once("config.php");
 
-// We check wether the user is accessing the demo locally
-$local = array("::1", "127.0.0.1");
-$is_local = in_array($_SERVER['REMOTE_ADDR'], $local);
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
-if ( isset( $_POST["html"] ) && $is_local ) {
+function resolveDependency($html) {
+	$html = str_replace('src="../../', 'src="'. $GLOBALS['RESOURCE'], $html);
+	$html = str_replace('src="../', 'src="'. $GLOBALS['RESOURCE'], $html);
 
-  if ( get_magic_quotes_gpc() )
-    $_POST["html"] = stripslashes($_POST["html"]);
-  
-  $dompdf = new DOMPDF();
-  $dompdf->load_html($_POST["html"]);
-  $dompdf->set_paper($_POST["paper"], $_POST["orientation"]);
-  $dompdf->render();
-
-  $dompdf->stream("dompdf_out.pdf", array("Attachment" => false));
-
-  exit(0);
+	return $html;
 }
 
-?>
+function getCSSFromHTML($html) {
+	$css = '';
+	preg_match_all("/(?<=link[\s]rel=\"stylesheet\"[\s]href=\"[.][.]\/css\/)(.*?)\"/", $html, $fmatches);
+
+	foreach($fmatches as $key => $m) {
+		if($key % 2 == 1) {
+			$css .= file_get_contents('./css/' . $m[0]);
+		}
+	}
+
+	return $css;
+}
+
+if ( isset( $_POST[ "html" ] ) && isset( $_POST[ "html2" ] ) ) {
+
+	$frontPage = resolveDependency(stripslashes( $_POST[ "html" ] ));
+	$backPage = resolveDependency(stripslashes( $_POST[ "html2" ]) );
+
+	$frontPageCSS = getCSSFromHTML($frontPage);
+	$backPageCSS = getCSSFromHTML($backPage);
+
+	$mpdf = new mPDF('utf-8', array(93, 54.87), 0, '', 0, 0, 0, 0, 0, 0);
+	$mpdf->WriteHTML($frontPageCSS, 1);
+	$mpdf->WriteHTML($frontPage, 0);
+	$mpdf->WriteHTML('<pagebreak>', 2);
+	$mpdf->WriteHTML($backPageCSS, 1);
+	$mpdf->WriteHTML($backPage, 0);
+	$mpdf->Output('card.pdf', 'I');
+
+	exit( 0 );
+}
