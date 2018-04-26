@@ -1,15 +1,70 @@
+/* @Reset defaults *********/
+header, hgroup, nav, section, article, aside, footer, main { display: block; }
+html, body, form, fieldset, legend, h1, h2, h3, h4, h5, h6, dd { margin: 0; padding: 0; }
+p, pre, blockquote, ul, ol, dl, table, figure { margin: 0 0 1.5em; padding: 0; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset { border: 0; }
+legend { color: inherit; } /* For IE */
+form ul, form ol { list-style: none; }
+a img { border: 0; }
+input, select, textarea { font-family: inherit; font-size: 100%; }
+.dtstart, .dtend, .published, .updated { border: 0; }
+img, video, object, embed { max-width: 100%; height: auto; }
+
+/* @General styles ***/
+html {
+    background:url("../images/bg.png") repeat-x #fff;
+}
+
+@font-face {
+	font-family: "opensans";
+	src: url("../fonts/OpenSans_Regular.ttf");
+}
+
+@font-face {
+	font-family: "opensanslight";
+	src: url("../fonts/OpenSans_Light.ttf");
+}
+
+@font-face {
+	font-family: "Font Awesome";
+	src: url("../fonts/fontawesome.ttf");
+}
+
+body {
+    font-family: "opensanslight";
+    color: #333;
+    word-wrap: break-word;
+    margin: 0;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+    -webkit-tap-highlight-color: #6bd7f3;
+    -moz-tap-highlight-color: #6bd7f3;
+}
+
 * {
     color: #000000;
 }
 
+.content {
 
-body {
-    margin: 0;
+}
+main  {
+  flex: 1;
+}
+#page{
     text-align: center;
-    font-family: Ubuntu,OpenSansLight,Arial,Tahoma,Ubuntu,"Sans serif";
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 #gen-html-textarea {
+    display: none;
+}
+
+#gen-html-back-textarea {
     display: none;
 }
 
@@ -18,8 +73,16 @@ body {
 }
 
 #gen-template-frame {
+    width: 439px;
+    height: 259px;
+    margin: 0 auto;
+    border: 0;
+}
+
+#gen-template-back-frame {
     height: 227px;
     width: 388px;
+    display: none;
 }
 
 #header {
@@ -33,6 +96,11 @@ body {
     margin-bottom: 10px;
     padding: 6px 20px;
     text-align: right;
+    border-top: 2px solid #fff;
+}
+
+#header #tabzilla {
+  margin-top: -6px;
 }
 
 
@@ -59,7 +127,8 @@ body {
     padding: 4px 10px;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-}
+    margin-top: 1.25em;
+ }
 
 .button:hover {
     -moz-transition: background-position 0.1s linear 0s;
@@ -94,11 +163,71 @@ body {
 }
 
 .gen-select-template-container {
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 
 #footer {
-    color: #999999;
+    background: #fff;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    color: #999999 !important;
     font: 100 0.8em/1.5em "Open Sans","Helvetica Neue",Arial,sans-serif;
     text-align: center;
+    color: #bbb;
+    overflow: hidden;
+}
+
+.help-text {
+    color: #666666;
+}
+
+.heart {
+    color: #D40000;
+}
+
+.shortcut-key {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    color: #333333;
+    display: inline-block;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.iframe-holder {
+  position: relative;
+  width: 439px;
+  margin: 0 auto;
+}
+
+.upload-avatar {
+  display: block;
+  position: absolute;;
+  top: 55px;
+  left: 60px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-avatar.show,
+.upload-avatar:hover {
+  opacity: 0.9;
+}
+
+.upload-icon {
+  font-family: "Font Awesome";
+  font-size: 50px;
+  color: rgba(255, 100, 58, 0.8);
+}
+
+.upload-avatar .notification {
+  color: rgba(255, 100, 58, 0.8);
+  font-size: 11px;
+  text-shadow: 0px 0px 2px #727171;
+  margin-top: -7px;
+}
+
+.upload-avatar input {
+  display: none;
 }

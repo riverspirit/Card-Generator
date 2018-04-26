@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../fonts/Roboto-Regular.ttf");
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-family: 'Roboto';
+	font-size: 13px;
+	background: #9E312C;
+}
+
+.logo {
+	left: 31px;
+	position: fixed;
+	top: 46px;
+}
+
+.name {
+	font-size: 19px;
+	position: fixed;
+	top: 40px;
+	left: 205px;
+}
+
+.subtitle {
+	font-style: italic;;
+	font-size: 13px;
+	position: fixed;
+	top: 62px;
+	left: 205px;
+}
+
+.info {
+	font-size: 12px;
+	left: 205px;
+	position: fixed;
+	top: 97px;
+}
+
+.bottom-link {
+	font-size: 15px;
+	right: 10px;
+	position: fixed;
+	top: 198px;
+}

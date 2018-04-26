@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-family: 'Roboto';
+	font-size: 13px;
+	background-color: #9E312C;
+}
+
+.logo-back {
+	left: 100px;
+	position: absolute;
+	top: 50px;
+}
+
+.bottom-link-text-back {
+	font-size: 15px;
+	right: 20px;
+	position: absolute;
+	bottom: 15px;
+	background: #9E312C;
+}
+
+.text {
+	left: 200px;
+	position: absolute;
+	top: 75px;
+	color: #ffffff;
+	background: #9E312C;
+}

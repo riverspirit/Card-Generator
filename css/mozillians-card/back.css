@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "opensans";
+	src: url("../../fonts/OpenSans_Regular.ttf");
+}
+
+
+@font-face {
+	font-family: "opensanslight";
+	src: url("../../fonts/OpenSans_Light.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-family: "opensans";
+	background-color: #2F9CD6;
+}
+
+
+.logo-back {
+	width: 212px;
+	position: absolute;
+	left: 125px;
+	top: 105px;
+}
+
+.link {
+	font-size: 15.0843px;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-family: "opensanslight";
+}
